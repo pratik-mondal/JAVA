@@ -2,14 +2,17 @@ package PATTERNS_CHALLANGES;
 
 import java.util.Scanner;
 
-public class _22_oddNumTriangle {
+public class _24_numberTriangleVerticallyFlipped {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("please enter your number  : ");
         int num = input.nextInt();
-        for (int i = 1; i <= num; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(2*j-1);
+        for(int i=1;i<=num;i++){
+            for(int j=1;j <= num-i+1;j++){
+                System.out.print("  ");
+            }
+            for(int k=1;k<=i;k++){
+                System.out.print(k+" ");
             }
             System.out.println();
         }
